@@ -16381,43 +16381,10 @@ footer .pull-center {
 [class*=" flag-"].oc-flag-squared, [class^=flag-].oc-flag-squared {
     width: .8em
 }
-
-.flag-ar {
-    background-image: url(../vendor/flag-icon/flags/4x3/ar.svg)
-}
-
-.flag-de {
-    background-image: url(../vendor/flag-icon/flags/4x3/de.svg)
-}
-
-.flag-gb {
-    background-image: url(../vendor/flag-icon/flags/4x3/gb.svg)
-}
-
-.flag-es {
-    background-image: url(../vendor/flag-icon/flags/4x3/es.svg)
-}
-
-.flag-fr {
-    background-image: url(../vendor/flag-icon/flags/4x3/fr.svg)
-}
-
-.flag-ru {
-    background-image: url(../vendor/flag-icon/flags/4x3/ru.svg)
-}
-
-.flag-jp {
-    background-image: url(../vendor/flag-icon/flags/4x3/jp.svg)
-}
-
-.flag-cn {
-    background-image: url(../vendor/flag-icon/flags/4x3/cn.svg)
-}
-
 .flag-transition {
     width: 1.73333333em;
     line-height: 2.2em;
-    background-image: url(../img/transition/transition.svg)
+    background-image: url('../images/transition/transition.svg')
 }
 
 .esri-attribution {
