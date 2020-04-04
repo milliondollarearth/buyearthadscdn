@@ -39,9 +39,7 @@ $(document).ready(function(){
                     }
                     return response;
                 },
-                onerror: function (response) {
-                    //$("#imageResult").html(response.info);
-                }
+                onerror: function (response) {}
             },
             fetch: null,
             revert: {
@@ -56,38 +54,21 @@ $(document).ready(function(){
                 onload: function (response) {
                     return response;
                 },
-                ondata: (formData) => {
-                    //return formData;
-                },
-                onerror: function (response) {
-                    //$("#imageResult").html(response.info);
-                }
-
+                ondata: (formData) => {},
+                onerror: function (response) {}
             }
         }
     });
     FilePond.registerPlugin(
-        // encodes the file as base64 data
-        FilePondPluginFileEncode,
-        // validates files based on input type
         FilePondPluginFileValidateType,
-        // corrects mobile image orientation
-        FilePondPluginImageExifOrientation,
-        // previews the image
         FilePondPluginImagePreview,
-        // crops the image to a certain aspect ratio
-        FilePondPluginImageCrop,
-        // resizes the image to fit a certain size
         FilePondPluginImageResize,
-        // applies crop and resize information on the client
-        FilePondPluginImageTransform
     );
     FilePond.create(
         document.querySelector('#filepond'),
         {
             labelIdle: upload_text,
             imagePreviewHeight: 170,
-            //imageCropAspectRatio: '1:1',
             imageResizeTargetWidth: 300,
             imageResizeTargetHeight: 300,
             stylePanelLayout: 'compact circle',

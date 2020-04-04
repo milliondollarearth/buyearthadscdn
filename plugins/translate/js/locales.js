@@ -6,7 +6,7 @@
     var TranslateLocales = function() {
 
         this.clickRecord = function(recordId) {
-            var newPopup = $('<a />')
+            var newPopup = $('<a />');
 
             newPopup.popup({
                 handler: 'onUpdateForm',
@@ -14,14 +14,14 @@
                     'record_id': recordId,
                 }
             })
-        }
+        };
 
         this.createRecord = function() {
-            var newPopup = $('<a />')
+            var newPopup = $('<a />');
             newPopup.popup({ handler: 'onCreateForm' })
         }
 
-    }
+    };
 
     $.translateLocales = new TranslateLocales;
 
