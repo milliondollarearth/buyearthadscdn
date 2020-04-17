@@ -1,5 +1,5 @@
 // All material copyright ESRI, All Rights Reserved, unless otherwise specified.
-// See https://js.arcgis.com/4.14/esri/copyright.txt for details.
+// See https://js.arcgis.com/4.15/esri/copyright.txt for details.
 //>>built
 define("require exports ../../core/tsSupport/assignHelper ../../core/tsSupport/awaiterHelper ../../core/tsSupport/extendsHelper ../../core/tsSupport/generatorHelper ../../core/arrayUtils ../../core/asyncUtils ../../core/Error ../../core/promiseUtils ../../core/unitUtils ../../geometry/Multipoint ../../geometry/Point ../../geometry/Polyline ../../geometry/support/aaBoundingRect ../../geometry/support/webMercatorUtils ./ElevationSampler ./ElevationTile".split(" "),function(w,r,u,l,y,m,G,H,p,n,z,A,B,
 I,v,q,C,D){function x(f,a){var b=f.lods.length-1;0<a&&(f=G.findIndex(f.lods,function(b){return b.resolution<a}),0===f?b=0:0<f&&(b=f-1));return b}Object.defineProperty(r,"__esModule",{value:!0});w=function(){function f(){}f.prototype.queryAll=function(a,b,c){return l(this,void 0,void 0,function(){var d,e,h,g,k;return m(this,function(f){switch(f.label){case 0:a=c&&c.ignoreInvisibleLayers?a.filter(function(a){return a.visible}):a.slice();if(!a.length)return[2,n.reject(new p("elevation-query:invalid-layer",
